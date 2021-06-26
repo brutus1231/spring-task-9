@@ -1,4 +1,4 @@
-package pl.sda;
+package pl.sda.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor
-public class Book {
+public class BookEntity {
 
     private String title;
     private BigDecimal value;

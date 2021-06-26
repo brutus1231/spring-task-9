@@ -2,6 +2,7 @@ package pl.sda;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import pl.sda.service.AuthorBo;
 
 public class Main {
 
