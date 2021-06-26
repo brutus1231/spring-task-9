@@ -9,4 +9,9 @@ public class Book {
 
     private String title;
     private BigDecimal value;
+
+    public Book(String title, BigDecimal value) {
+        this.title = title;
+        this.value = value;
+    }
 }
