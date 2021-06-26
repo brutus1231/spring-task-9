@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Component
 public class AuthorBo {
@@ -16,7 +17,8 @@ public class AuthorBo {
     }
 
     BigDecimal calculateAveragePrice(String pesel) {
-        BigDecimal result = null;
-        return result;
+        List<Book> books = bookBo.findByAuthor(pesel);
+        double value = books.stream().mapToDouble(t-> t.getValue().doubleValue()).average().getAsDouble();
+        return BigDecimal.valueOf(value);
     }
 }

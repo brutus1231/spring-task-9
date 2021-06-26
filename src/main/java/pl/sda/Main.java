@@ -9,6 +9,6 @@ public class Main {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("context.xml");
         AuthorBo authorBo = context.getBean(AuthorBo.class);
-
+        System.out.println(authorBo.calculateAveragePrice("PESEL"));
     }
 }
