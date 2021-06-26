@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AuthorBo {
 
-    private BookBo bookBo;
+    private final BookBo bookBo;
 
     @Autowired
     public AuthorBo(BookBo bookBo) {
