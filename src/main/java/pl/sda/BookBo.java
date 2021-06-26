@@ -10,7 +10,6 @@ public class BookBo {
 
     List<Book> findByAuthor(String pesel) {
         Book book1 = new Book("Harry Potter", BigDecimal.valueOf(120));
-        return List.of(
-                book1);
+        return List.of(book1);
     }
 }
